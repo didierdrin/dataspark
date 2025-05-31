@@ -2,8 +2,17 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+declare global {
+  interface Window {
+    windyInit?: (options: any, callback: (api: any) => void) => void;
+    L?: any; // For Leaflet marker (optional, if you use window.L)
+  }
+}
+
+
 export default function WindyWeatherMap() {
-  const mapRef = useRef(null);
+  const mapRef = useRef<HTMLDivElement | null>(null);
+
   const [mapType, setMapType] = useState('iframe');
   const [coordinates, setCoordinates] = useState({
     lat: 51.5074,
