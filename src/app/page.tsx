@@ -87,7 +87,7 @@ export default function WindyWeatherMap() {
   return (
     <div className="max-w-6xl mx-auto p-6 bg-white min-h-screen">
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Dataspark</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-4">DataSpark</h1>
 
         {/* Map Type Selector */}
         <div className="mb-4">
