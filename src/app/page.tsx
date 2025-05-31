@@ -28,7 +28,11 @@ export default function WindyWeatherMap() {
 
   useEffect(() => {
     if (mapType === 'api' && mapRef.current) {
-      mapRef.current.innerHTML = '';
+      // mapRef.current.innerHTML = '';
+      const mapElement = mapRef.current;
+      if (mapElement) {
+        mapElement.innerHTML = '';
+      }
 
       const script = document.createElement('script');
       script.src = 'https://api.windy.com/assets/map-forecast/libBoot.js';
@@ -43,7 +47,7 @@ export default function WindyWeatherMap() {
             zoom: 8,
           };
 
-          window.windyInit(options, (windyAPI) => {
+          window.windyInit(options, (windyAPI:any) => {
             const { map } = windyAPI;
 
             if (window.L) {
@@ -65,7 +69,7 @@ export default function WindyWeatherMap() {
     }
   }, [mapType, coordinates]);
 
-  const handleCoordinateChange = (field, value) => {
+  const handleCoordinateChange = ([field, value]:any) => {
     const numValue = parseFloat(value);
     if (!isNaN(numValue)) {
       setCoordinates(prev => ({
@@ -127,7 +131,7 @@ export default function WindyWeatherMap() {
             <input
               type="number"
               value={coordinates.lat}
-              onChange={(e) => handleCoordinateChange('lat', e.target.value)}
+              onChange={(e) => handleCoordinateChange('lat')}
               step="0.0001"
               min="-90"
               max="90"
@@ -141,7 +145,7 @@ export default function WindyWeatherMap() {
             <input
               type="number"
               value={coordinates.lon}
-              onChange={(e) => handleCoordinateChange('lon', e.target.value)}
+              onChange={(e) => handleCoordinateChange('lon')}
               step="0.0001"
               min="-180"
               max="180"
