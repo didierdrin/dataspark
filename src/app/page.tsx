@@ -144,7 +144,7 @@ export default function WindyWeatherMap() {
     // Profile page with same background design
     return (
       <div className="min-h-screen bg-cover bg-center" style={{ 
-        backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(79, 70, 229, 0.7)), url(/bg-img.jpg)'
+        backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(79, 70, 229, 0.7)), url(/bg-img.png)'
       }}>
         <div className="max-w-6xl mx-auto p-6">
           <div className="flex justify-between items-center mb-8">
@@ -177,7 +177,7 @@ export default function WindyWeatherMap() {
 
   return (
     <div className="min-h-screen bg-cover bg-center" style={{ 
-      backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(79, 70, 229, 0.7)), url(/bg-img.jpg)'
+      backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(79, 70, 229, 0.7)), url(/bg-img.png)'
     }}>
       {/* Auth Modals */}
       {authModal && (
