@@ -26,8 +26,16 @@ body {
 }
 
 .text-gradient {
+  background: linear-gradient(to right, #a855f7, #a855f7); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); #6b21a8 */
+}
+
+/* .text-gradient {
   background: linear-gradient(to right, #4f46e5, #4b5e8c);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
+} */
