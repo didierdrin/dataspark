@@ -148,7 +148,7 @@ export default function WindyWeatherMap() {
       }}>
         <div className="max-w-6xl mx-auto p-6">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-white">DataSpark</h1>
+            <h1 className="text-3xl font-bold text-gradient-to-r from-indigo-600 to-indigo-400">DataSpark</h1>
             <button 
               onClick={handleSignOut}
               className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
@@ -217,7 +217,7 @@ export default function WindyWeatherMap() {
                 </button>
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
+                  className="bg-gradient-to-r from-purple-600 to-purple-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-purple-700 hover:to-purple-500 transition-all"
                 >
                   {authModal === 'signin' ? 'Sign In' : 'Sign Up'}
                 </button>
@@ -230,7 +230,7 @@ export default function WindyWeatherMap() {
       <div className="max-w-6xl mx-auto p-6">
         {/* Top Bar with Auth Buttons */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-white">DataSpark</h1>
+          <h1 className="text-3xl font-bold text-gradient-to-r from-indigo-600 to-indigo-400">DataSpark</h1>
           <div className="flex gap-4">
             <button 
               onClick={() => setAuthModal('signin')}
