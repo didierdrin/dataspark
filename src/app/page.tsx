@@ -251,7 +251,7 @@ export default function WindyWeatherMap() {
         <div className="bg-transprent backdrop-blur-sm bg-opacity-90  rounded-xl p-6 shadow-xl">
           {/* Map Type Selector */}
           <div className="mb-4">
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-sm font-medium text-gray-200 mb-2">
               Map Implementation:
             </label>
             <div className="flex gap-4">
@@ -261,7 +261,7 @@ export default function WindyWeatherMap() {
                   value="iframe"
                   checked={mapType === 'iframe'}
                   onChange={(e) => setMapType(e.target.value)}
-                  className="mr-2"
+                  className="mr-2 text-gray-400"
                 />
                 Iframe (Recommended)
               </label>
@@ -271,7 +271,7 @@ export default function WindyWeatherMap() {
                   value="api"
                   checked={mapType === 'api'}
                   onChange={(e) => setMapType(e.target.value)}
-                  className="mr-2"
+                  className="mr-2 text-gray-400"
                 />
                 Windy API
               </label>
