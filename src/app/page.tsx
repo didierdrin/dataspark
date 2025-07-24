@@ -131,13 +131,13 @@ export default function WindyWeatherMap() {
   };
 
   const presetLocations = [
+    { name: 'Kigali, Rwanda', lat: -1.9441, lon: 30.0619 },
     { name: 'London, UK', lat: 51.5074, lon: -0.1278 },
     { name: 'New York, USA', lat: 40.7128, lon: -74.0060 },
     { name: 'Tokyo, Japan', lat: 35.6762, lon: 139.6503 },
     { name: 'Sydney, Australia', lat: -33.8688, lon: 151.2093 },
     { name: 'Mumbai, India', lat: 19.0760, lon: 72.8777 },
-    { name: 'Lagos, Nigeria', lat: 6.5244, lon: 3.3792 },
-    { name: 'Kigali, Rwanda', lat: -1.9441, lon: 30.0619 }
+    { name: 'Lagos, Nigeria', lat: 6.5244, lon: 3.3792 }
   ];
 
   if (user) {
