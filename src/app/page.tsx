@@ -148,7 +148,7 @@ export default function WindyWeatherMap() {
       }}>
         <div className="max-w-6xl mx-auto p-6">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-gradient-to-r from-indigo-600 to-indigo-400">DataSpark</h1>
+            <h1 className="text-3xl font-bold text-gradient">DataSpark</h1>
             <button 
               onClick={handleSignOut}
               className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
@@ -230,17 +230,17 @@ export default function WindyWeatherMap() {
       <div className="max-w-6xl mx-auto p-6">
         {/* Top Bar with Auth Buttons */}
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gradient-to-r from-indigo-600 to-indigo-400">DataSpark</h1>
+          <h1 className="text-3xl font-bold text-gradient">DataSpark</h1>
           <div className="flex gap-4">
             <button 
               onClick={() => setAuthModal('signin')}
-              className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
+              className="bg-gradient-to-r from-purple-600 to-purple-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-purple-700 hover:to-purple-500 transition-all"
             >
               Sign In
             </button>
             <button 
               onClick={() => setAuthModal('signup')}
-              className="bg-gradient-to-r from-indigo-500 to-indigo-300 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-600 hover:to-indigo-400 transition-all"
+              className="bg-gradient-to-r from-purple-500 to-purple-300 text-white px-4 py-2 rounded-lg shadow-lg hover:from-purple-600 hover:to-purple-400 transition-all"
             >
               Sign Up
             </button>
