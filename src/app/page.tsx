@@ -157,7 +157,7 @@ export default function WindyWeatherMap() {
             </button>
           </div>
           
-          <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+          <div className="bg-white bg-opacity-90 rounded-xl p-6 shadow-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Welcome, {user.email}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-indigo-50 p-4 rounded-lg">
@@ -247,8 +247,8 @@ export default function WindyWeatherMap() {
           </div>
         </div>
 
-        {/* Main Content */}
-        <div className="bg-white bg-opacity-90 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+        {/* Main Content backdrop-blur-sm */}
+        <div className="bg-transprent backdrop-blur-sm bg-opacity-90  rounded-xl p-6 shadow-xl">
           {/* Map Type Selector */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-2">
