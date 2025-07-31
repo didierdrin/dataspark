@@ -31,13 +31,19 @@ export default function ProfilePage() {
           <h1 className="text-3xl font-bold text-gradient">DataSpark</h1>
           <button 
             onClick={() => auth.signOut()}
-            className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
+            className="cursor-pointer bg-gradient-to-r from-indigo-600 to-indigo-400 text-white px-4 py-2 rounded-lg shadow-lg hover:from-indigo-700 hover:to-indigo-500 transition-all"
           >
             Sign Out
           </button>
         </div>
+
+        <div>
+  <a href='/' className='text-gray-300 cursor-pointer hover:underline'>
+    ← Back
+  </a>
+</div>
         
-        <div className="bg-white bg-opacity-90 rounded-xl p-6 shadow-xl">
+        <div className="bg-white bg-opacity-90 rounded-xl p-6 mt-8 shadow-xl">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Welcome, {user.email}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-indigo-50 p-4 rounded-lg">
